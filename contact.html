@@ -1117,29 +1117,30 @@ body{top:0!important;position:static!important}
 <section class="section">
   <div class="wrap">
     <div class="form-wrap" style="margin-top:0">
-      <form data-form="quote" enctype="multipart/form-data" novalidate>
+      <form action="https://formspree.io/f/mjywgooe" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New Quote Request - Cryovanta Website">
         <fieldset class="fieldset">
           <legend>Your Request</legend>
           <div class="form-grid">
         <div class="field">
           <label for="q-name">Name <span class="req">*</span></label>
-          <input id="q-name" name="q-name" type="text" required autocomplete="name" placeholder="">
+          <input id="q-name" name="name" type="text" required autocomplete="name" placeholder="">
         </div>
         <div class="field">
           <label for="q-company">Company <span class="req">*</span></label>
-          <input id="q-company" name="q-company" type="text" required autocomplete="organization" placeholder="">
+          <input id="q-company" name="company" type="text" required autocomplete="organization" placeholder="">
         </div>
         <div class="field">
           <label for="q-email">Email <span class="req">*</span></label>
-          <input id="q-email" name="q-email" type="email" required autocomplete="email" placeholder="name@company.com">
+          <input id="q-email" name="email" type="email" required autocomplete="email" placeholder="name@company.com">
         </div>
         <div class="field">
           <label for="q-phone">Phone</label>
-          <input id="q-phone" name="q-phone" type="tel" autocomplete="tel" placeholder="">
+          <input id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="">
         </div>
             <div class="field full">
               <label for="q-application">Application / Service <span class="req">*</span></label>
-              <select id="q-application" name="q-application" required>
+              <select id="q-application" name="application" required>
                 <option value="">Select an application or service</option>
                 <option>LNG cryogenic pumps</option>
                 <option>Pressure transmitters</option>
@@ -1153,7 +1154,7 @@ body{top:0!important;position:static!important}
             </div>
             <div class="field full">
               <label for="q-message">Message <span class="req">*</span></label>
-              <textarea id="q-message" name="q-message" required placeholder="Duty point, medium, site conditions, timescale — whatever you already know"></textarea>
+              <textarea id="q-message" name="message" required placeholder="Duty point, medium, site conditions, timescale — whatever you already know"></textarea>
             </div>
             <div class="field full rq-file">
               <label for="q-attachment">Attach Technical Sheet or Photo (optional)</label>

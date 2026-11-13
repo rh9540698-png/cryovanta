@@ -1144,22 +1144,23 @@ body{top:0!important;position:static!important}
   <div class="wrap">
     <div class="pa-doc">
       <div class="form-wrap">
-        <form data-form="partner" novalidate>
+        <form action="https://formspree.io/f/mjywgooe" method="POST">
+          <input type="hidden" name="_subject" value="New Distributor Application - Cryovanta Website">
 
           <fieldset class="fieldset">
             <legend>Company Information</legend>
             <div class="form-grid">
               <div class="field">
                 <label for="pa-company">Company Name <span class="req">*</span></label>
-                <input id="pa-company" name="pa-company" type="text" required autocomplete="organization">
+                <input id="pa-company" name="company" type="text" required autocomplete="organization">
               </div>
               <div class="field">
                 <label for="pa-website">Company Website <span class="req">*</span></label>
-                <input id="pa-website" name="pa-website" type="url" required autocomplete="url" placeholder="https://">
+                <input id="pa-website" name="website" type="url" required autocomplete="url" placeholder="https://">
               </div>
               <div class="field full">
                 <label for="pa-country">Country / Region <span class="req">*</span></label>
-                <input id="pa-country" name="pa-country" type="text" required autocomplete="country-name">
+                <input id="pa-country" name="country" type="text" required autocomplete="country-name">
               </div>
             </div>
           </fieldset>
@@ -1169,15 +1170,15 @@ body{top:0!important;position:static!important}
             <div class="form-grid">
               <div class="field">
                 <label for="pa-name">Contact Name <span class="req">*</span></label>
-                <input id="pa-name" name="pa-name" type="text" required autocomplete="name">
+                <input id="pa-name" name="contact_name" type="text" required autocomplete="name">
               </div>
               <div class="field">
                 <label for="pa-email">Business Email <span class="req">*</span></label>
-                <input id="pa-email" name="pa-email" type="email" required autocomplete="email" placeholder="name@company.com">
+                <input id="pa-email" name="email" type="email" required autocomplete="email" placeholder="name@company.com">
               </div>
               <div class="field full">
                 <label for="pa-phone">Phone Number</label>
-                <input id="pa-phone" name="pa-phone" type="tel" autocomplete="tel">
+                <input id="pa-phone" name="phone" type="tel" autocomplete="tel">
               </div>
             </div>
           </fieldset>
@@ -1187,7 +1188,7 @@ body{top:0!important;position:static!important}
             <div class="form-grid">
               <div class="field full">
                 <label for="pa-type">Business Type <span class="req">*</span></label>
-                <select id="pa-type" name="pa-type" required>
+                <select id="pa-type" name="business_type" required>
                   <option value="">Select a business type</option>
               <option>Authorized Distributor</option>
               <option>OEM / Integrator</option>
@@ -1202,12 +1203,12 @@ body{top:0!important;position:static!important}
           <fieldset class="fieldset">
             <legend>Primary Industries Served</legend>
             <div class="pa-check">
-            <label for="pa-ind-1"><input type="checkbox" id="pa-ind-1" name="pa-industries" value="LNG Terminals"><span>LNG Terminals</span></label>
-            <label for="pa-ind-2"><input type="checkbox" id="pa-ind-2" name="pa-industries" value="Oil & Gas"><span>Oil &amp; Gas</span></label>
-            <label for="pa-ind-3"><input type="checkbox" id="pa-ind-3" name="pa-industries" value="Power Generation"><span>Power Generation</span></label>
-            <label for="pa-ind-4"><input type="checkbox" id="pa-ind-4" name="pa-industries" value="Industrial Gas"><span>Industrial Gas</span></label>
-            <label for="pa-ind-5"><input type="checkbox" id="pa-ind-5" name="pa-industries" value="Petrochemical"><span>Petrochemical</span></label>
-            <label for="pa-ind-6"><input type="checkbox" id="pa-ind-6" name="pa-industries" value="Food Processing"><span>Food Processing</span></label>
+            <label for="pa-ind-1"><input type="checkbox" id="pa-ind-1" name="industries" value="LNG Terminals"><span>LNG Terminals</span></label>
+            <label for="pa-ind-2"><input type="checkbox" id="pa-ind-2" name="industries" value="Oil & Gas"><span>Oil &amp; Gas</span></label>
+            <label for="pa-ind-3"><input type="checkbox" id="pa-ind-3" name="industries" value="Power Generation"><span>Power Generation</span></label>
+            <label for="pa-ind-4"><input type="checkbox" id="pa-ind-4" name="industries" value="Industrial Gas"><span>Industrial Gas</span></label>
+            <label for="pa-ind-5"><input type="checkbox" id="pa-ind-5" name="industries" value="Petrochemical"><span>Petrochemical</span></label>
+            <label for="pa-ind-6"><input type="checkbox" id="pa-ind-6" name="industries" value="Food Processing"><span>Food Processing</span></label>
             </div>
             <p class="pa-hint" style="margin-top:14px">Select every industry your company actively serves.</p>
           </fieldset>
@@ -1217,11 +1218,11 @@ body{top:0!important;position:static!important}
             <div class="form-grid">
               <div class="field full">
                 <label for="pa-lines">Current Product Lines Represented</label>
-                <textarea id="pa-lines" name="pa-lines" placeholder="Briefly list the pump or instrumentation brands you currently carry."></textarea>
+                <textarea id="pa-lines" name="product_lines" placeholder="Briefly list the pump or instrumentation brands you currently carry."></textarea>
               </div>
               <div class="field full">
                 <label for="pa-why">Why do you want to partner with Cryovanta?</label>
-                <textarea id="pa-why" name="pa-why" placeholder="Tell us about your market reach and why Cryovanta is a good fit."></textarea>
+                <textarea id="pa-why" name="why_partner" placeholder="Tell us about your market reach and why Cryovanta is a good fit."></textarea>
               </div>
             </div>
           </fieldset>

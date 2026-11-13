@@ -1155,37 +1155,38 @@ body{top:0!important;position:static!important}
     </div>
 
     <div class="form-wrap">
-      <form data-form="spare-parts" novalidate>
+      <form action="https://formspree.io/f/mjywgooe" method="POST">
+          <input type="hidden" name="_subject" value="New Spare Parts Request - Cryovanta Website">
         <fieldset class="fieldset">
           <legend>Product Information</legend>
           <div class="form-grid">
         <div class="field">
           <label for="sp-project">Project name / Hull N&deg;</label>
-          <input id="sp-project" name="sp-project" type="text" autocomplete="on" placeholder="Project reference">
+          <input id="sp-project" name="project" type="text" autocomplete="on" placeholder="Project reference">
         </div>
         <div class="field">
           <label for="sp-site">Site address</label>
-          <input id="sp-site" name="sp-site" type="text" autocomplete="on" placeholder="Facility, city, country">
+          <input id="sp-site" name="site_address" type="text" autocomplete="on" placeholder="Facility, city, country">
         </div>
         <div class="field">
           <label for="sp-machine">Machine type <span class="req">*</span></label>
-          <input id="sp-machine" name="sp-machine" type="text" required autocomplete="on" placeholder="e.g. submerged LNG pump">
+          <input id="sp-machine" name="machine_type" type="text" required autocomplete="on" placeholder="e.g. submerged LNG pump">
         </div>
         <div class="field">
           <label for="sp-serial">Serial number <span class="req">*</span></label>
-          <input id="sp-serial" name="sp-serial" type="text" required autocomplete="on" placeholder="e.g. CPN1213190800">
+          <input id="sp-serial" name="serial_number" type="text" required autocomplete="on" placeholder="e.g. CPN1213190800">
         </div>
         <div class="field">
           <label for="sp-part">Part number</label>
-          <input id="sp-part" name="sp-part" type="text" autocomplete="on" placeholder="If known">
+          <input id="sp-part" name="part_number" type="text" autocomplete="on" placeholder="If known">
         </div>
         <div class="field">
           <label for="sp-qty">Quantity <span class="req">*</span></label>
-          <input id="sp-qty" name="sp-qty" type="number" required autocomplete="on" placeholder="1">
+          <input id="sp-qty" name="quantity" type="number" required autocomplete="on" placeholder="1">
         </div>
             <div class="field full">
               <label for="sp-desc">Description</label>
-              <textarea id="sp-desc" name="sp-desc" placeholder="Describe the part, or what it needs to replace"></textarea>
+              <textarea id="sp-desc" name="description" placeholder="Describe the part, or what it needs to replace"></textarea>
             </div>
           </div>
         </fieldset>
@@ -1195,39 +1196,39 @@ body{top:0!important;position:static!important}
           <div class="form-grid">
         <div class="field">
           <label for="sp-company">Company <span class="req">*</span></label>
-          <input id="sp-company" name="sp-company" type="text" required autocomplete="organization" placeholder="">
+          <input id="sp-company" name="company" type="text" required autocomplete="organization" placeholder="">
         </div>
         <div class="field">
           <label for="sp-name">Name <span class="req">*</span></label>
-          <input id="sp-name" name="sp-name" type="text" required autocomplete="family-name" placeholder="">
+          <input id="sp-name" name="last_name" type="text" required autocomplete="family-name" placeholder="">
         </div>
         <div class="field">
           <label for="sp-firstname">Firstname <span class="req">*</span></label>
-          <input id="sp-firstname" name="sp-firstname" type="text" required autocomplete="given-name" placeholder="">
+          <input id="sp-firstname" name="first_name" type="text" required autocomplete="given-name" placeholder="">
         </div>
         <div class="field">
           <label for="sp-address">Address</label>
-          <input id="sp-address" name="sp-address" type="text" autocomplete="street-address" placeholder="">
+          <input id="sp-address" name="address" type="text" autocomplete="street-address" placeholder="">
         </div>
         <div class="field">
           <label for="sp-zip">Zip Code</label>
-          <input id="sp-zip" name="sp-zip" type="text" autocomplete="postal-code" placeholder="">
+          <input id="sp-zip" name="zip_code" type="text" autocomplete="postal-code" placeholder="">
         </div>
         <div class="field">
           <label for="sp-town">Town</label>
-          <input id="sp-town" name="sp-town" type="text" autocomplete="address-level2" placeholder="">
+          <input id="sp-town" name="town" type="text" autocomplete="address-level2" placeholder="">
         </div>
         <div class="field">
           <label for="sp-country">Country</label>
-          <input id="sp-country" name="sp-country" type="text" autocomplete="country-name" placeholder="">
+          <input id="sp-country" name="country" type="text" autocomplete="country-name" placeholder="">
         </div>
         <div class="field">
           <label for="sp-phone">Phone</label>
-          <input id="sp-phone" name="sp-phone" type="tel" autocomplete="tel" placeholder="">
+          <input id="sp-phone" name="phone" type="tel" autocomplete="tel" placeholder="">
         </div>
         <div class="field">
           <label for="sp-email">Email <span class="req">*</span></label>
-          <input id="sp-email" name="sp-email" type="email" required autocomplete="email" placeholder="name@company.com">
+          <input id="sp-email" name="email" type="email" required autocomplete="email" placeholder="name@company.com">
         </div>
           </div>
         </fieldset>
